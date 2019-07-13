@@ -12,7 +12,11 @@ import { Component, Input } from '@angular/core';
  *
  */
 export class InputPrimarioComponent {
+  private _defaultMaxlength = 32;
+
   private _placeholder? = '';
+
+  private _maxlength? = this._defaultMaxlength;
 
   /**
    * @optional
@@ -29,5 +33,24 @@ export class InputPrimarioComponent {
 
   get placeholder() {
     return this._placeholder;
+  }
+
+  /**
+   * @optional
+   *
+   * @description
+   *
+   * Indica a quantidade máxima de caracteres que o input aceita.
+   *
+   * @default 32
+   */
+  @Input('wbs-maxlength') set maxlength(valor: number) {
+    this._maxlength = !isNaN(parseInt(<any>valor, 10))
+      ? parseInt(<any>valor, 10)
+      : this._defaultMaxlength;
+  }
+
+  get maxLength() {
+    return this._maxlength;
   }
 }
