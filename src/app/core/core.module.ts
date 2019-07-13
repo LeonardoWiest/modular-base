@@ -1,32 +1,36 @@
-import { SharedModule } from 'src/app/shared/shared.module';
-import { NgModule, Optional, SkipSelf } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { AutenticacaoPageComponent } from 'src/app/core/pages/autenticacao/autenticacao.component';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { LOCALE_ID, NgModule, Optional, SkipSelf } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RouterModule } from '@angular/router';
 
 @NgModule({
-    imports: [
-        SharedModule,
-        RouterModule
-    ],
-    exports: [
-        BrowserAnimationsModule
-    ],
-    providers: [
-        Title
-    ],
-    declarations: [
-        //NotFoundComponent
-    ]
+  imports: [
+    CommonModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
+  ],
+  declarations: [AutenticacaoPageComponent],
+  exports: [BrowserAnimationsModule, HttpClientModule],
+  providers: [
+    {
+      provide: LOCALE_ID,
+      useValue: 'pt'
+    }
+  ],
+  entryComponents: []
 })
 export class CoreModule {
-
-    constructor(
-        @Optional() @SkipSelf() parentModule: CoreModule
-    ) {
-        if (parentModule) {
-            throw new Error('CoreModule is already loaded. Import it in the AppModule only.');
-        }
+  constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
+    if (parentModule) {
+      throw new Error(
+        'CoreModule já foi carregado. Importe o CoreModule somente no AppModule.'
+      );
     }
-
+  }
 }
