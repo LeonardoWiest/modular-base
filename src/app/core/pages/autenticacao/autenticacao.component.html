@@ -7,15 +7,9 @@
 
         <form class="form-autenticacao">
 
-          <div class="form-label-group">
-            <input class="form-control" type="text" placeholder="Informe seu login..." required maxlength="80"
-              minlength="8" autocomplete="false" autofocus>
-          </div>
+          <wbs-input-primario #inputLogin wbs-placeholder="Informe seu login..."></wbs-input-primario>
 
-          <div class="form-label-group">
-            <input class="form-control" type="password" placeholder="Informe sua senha..." maxlength="32" minlength="8"
-              autocomplete="false" required>
-          </div>
+          <wbs-input-primario #inputSenha wbs-placeholder="Informe sua senha..."></wbs-input-primario>
 
           <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Acessar</button>
 

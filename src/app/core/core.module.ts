@@ -1,4 +1,5 @@
 import { AutenticacaoPageComponent } from 'src/app/core/pages/autenticacao/autenticacao.component';
+import { InputPrimarioComponent } from 'src/app/shared/components/input-primario/input-primario.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { LOCALE_ID, NgModule, Optional, SkipSelf } from '@angular/core';
@@ -15,7 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  declarations: [AutenticacaoPageComponent],
+  declarations: [AutenticacaoPageComponent, InputPrimarioComponent],
   exports: [BrowserAnimationsModule, HttpClientModule],
   providers: [
     {

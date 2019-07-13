@@ -1,12 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { InputPrimarioComponent } from 'src/app/shared/components/input-primario/input-primario.component';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'wbs-autenticacao-page',
   templateUrl: './autenticacao.component.html',
   styleUrls: ['./autenticacao.component.scss']
 })
-export class AutenticacaoPageComponent implements OnInit {
-  constructor() {}
+export class AutenticacaoPageComponent {
+  @ViewChild('inputLogin', { static: true }) inputLogin: InputPrimarioComponent;
 
-  ngOnInit() {}
+  @ViewChild('inputSenha', { static: true }) inputSenha: InputPrimarioComponent;
+
+  constructor() {}
 }
