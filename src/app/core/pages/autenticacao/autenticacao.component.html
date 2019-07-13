@@ -1,22 +1,27 @@
-<div class="container">
-  <div class="row">
+<div class="container h-100">
+  <div class="row align-items-center h-100">
     <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-      <div class="card card-autenticacao my-5">
+      <div class="text-center">
+        <div class="card card-autenticacao my-5">
 
-        <h3 class="card-logotipo text-center">WBoss</h3>
+          <h1 class="card-logotipo text-center">WBoss</h1>
 
-        <form class="form-autenticacao">
+          <form class="form-autenticacao" (ngSubmit)="clickAutenticar()">
 
-          <wbs-input-primario #inputLogin name="a" wbs-placeholder="Informe seu login..." wbs-maxlength="40">
-          </wbs-input-primario>
+            <wbs-input-primario [formGroup]="autenticacaoForm" #inputLogin wbs-placeholder="Informe seu login..."
+              wbs-maxlength="40">
+            </wbs-input-primario>
 
-          <wbs-input-primario #inputSenha name="b" wbs-placeholder="Informe sua senha..." wbs-maxlength="32">
-          </wbs-input-primario>
+            <wbs-input-primario [formGroup]="autenticacaoForm" #inputSenha wbs-placeholder="Informe sua senha..."
+              wbs-maxlength="32">
+            </wbs-input-primario>
 
-          <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Acessar</button>
+            <wbs-botao-primario wbs-label="Acessar">
+            </wbs-botao-primario>
 
-        </form>
+          </form>
 
+        </div>
       </div>
     </div>
   </div>
