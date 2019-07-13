@@ -1,6 +1,5 @@
-import { CoreModule } from 'src/app/core/core.module';
-import { AutenticacaoModule } from 'src/app/core/modules/autenticacao.module';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -9,9 +8,8 @@ import { AppComponent } from './app.component';
         AppComponent
     ],
     imports: [
-        AppRoutingModule,
-        AutenticacaoModule,
-        CoreModule
+        BrowserModule,
+        AppRoutingModule
     ],
     providers: [],
     bootstrap: [AppComponent]

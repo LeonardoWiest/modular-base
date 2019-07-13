@@ -4,7 +4,7 @@
     "array-type": false,
     "arrow-parens": false,
     "deprecation": {
-      "severity": "warn"
+      "severity": "warning"
     },
     "component-class-suffix": true,
     "contextual-lifecycle": true,
@@ -12,13 +12,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "base",
+      "wbs",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "base",
+      "wbs",
       "kebab-case"
     ],
     "import-blacklist": [

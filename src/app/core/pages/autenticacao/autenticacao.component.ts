@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'base-autenticacao-page',
+    selector: 'wbs-autenticacao-page',
     templateUrl: './autenticacao.component.html',
     styleUrls: ['./autenticacao.component.scss']
 })
