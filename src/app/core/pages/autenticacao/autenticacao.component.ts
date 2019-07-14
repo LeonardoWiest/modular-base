@@ -47,8 +47,5 @@ export class AutenticacaoPageComponent implements OnInit {
 
   clickAutenticar = () => this.validarCredenciais();
 
-  validarCredenciais() {
-    if (this.autenticacaoForm.invalid) {
-    }
-  }
+  validarCredenciais() {}
 }
