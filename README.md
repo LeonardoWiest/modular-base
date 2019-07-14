@@ -1,4 +1,5 @@
-# WBoss &middot; [![Build Status](https://travis-ci.org/LeonardoWiest/wboss.svg?branch=master)](https://travis-ci.org/LeonardoWiest/wboss)
+# WBoss &middot; [![Build Status](https://travis-ci.org/LeonardoWiest/wboss.svg?branch=master)](https://travis-ci.org/LeonardoWiest/wboss) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/158919f54cba469a97b519801890017d)](https://www.codacy.com/app/LeonardoWiest/wboss?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LeonardoWiest/wboss&amp;utm_campaign=Badge_Grade)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
 
