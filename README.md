@@ -1,4 +1,4 @@
-# WBoss &middot; [![CSS gzip size](https://img.badgesize.io/twbs/bootstrap/v4-dev/dist/css/bootstrap.min.css?compression=gzip&label=CSS+gzip+size)](https://github.com/twbs/bootstrap/tree/v4-dev/dist/css/bootstrap.min.css) [![JS gzip size](https://img.badgesize.io/twbs/bootstrap/v4-dev/dist/js/bootstrap.min.js?compression=gzip&label=JS+gzip+size)](https://github.com/twbs/bootstrap/tree/v4-dev/dist/js/bootstrap.min.js)
+# WBoss &middot; [![Build Status](https://travis-ci.org/LeonardoWiest/wboss.svg?branch=master)](https://travis-ci.org/LeonardoWiest/wboss)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
 
