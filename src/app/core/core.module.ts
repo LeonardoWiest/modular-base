@@ -1,12 +1,12 @@
-import { AutenticacaoPageComponent } from 'src/app/core/pages/autenticacao/autenticacao.component';
-import { BotaoPrimarioComponent } from 'src/app/shared/components/botao-primario/botao-primario.component';
-import { InputPrimarioComponent } from 'src/app/shared/components/input-primario/input-primario.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { LOCALE_ID, NgModule, Optional, SkipSelf } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AutenticacaoPageComponent } from '@core/pages/autenticacao/autenticacao.component';
+import { BotaoPrimarioComponent } from '@shared/components/botao-primario/botao-primario.component';
+import { InputPrimarioComponent } from '@shared/components/input-primario/input-primario.component';
 
 @NgModule({
   imports: [
