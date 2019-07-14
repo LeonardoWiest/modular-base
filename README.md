@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ca3138e4cb1245b0bf66390e41ce6b83)](https://app.codacy.com/app/LeonardoWiest/wboss?utm_source=github.com&utm_medium=referral&utm_content=LeonardoWiest/wboss&utm_campaign=Badge_Grade_Dashboard)
 # WBoss &middot; [![Build Status](https://travis-ci.org/LeonardoWiest/wboss.svg?branch=master)](https://travis-ci.org/LeonardoWiest/wboss)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
