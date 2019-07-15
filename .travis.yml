@@ -1,3 +1,11 @@
-language: node_js
-node_js:
-  - 'stable'
+cache:
+  paths:
+    - node_modules/
+before_script:
+  - npm ci
+test_stage:
+  stage: test
+  environment: Test
+  only:
+    - develop
+  script: -npm run build
