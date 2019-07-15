@@ -1,9 +1,13 @@
 import { Component, Input } from '@angular/core';
+import { ControlContainer, FormGroupDirective } from '@angular/forms';
 
 @Component({
   selector: 'wbs-input-primario',
   templateUrl: './input-primario.component.html',
-  styleUrls: ['./input-primario.component.scss']
+  styleUrls: ['./input-primario.component.scss'],
+  viewProviders: [
+    { provide: ControlContainer, useExisting: FormGroupDirective }
+  ]
 })
 /**
  *  @description
@@ -17,6 +21,8 @@ export class InputPrimarioComponent {
   private _placeholder? = '';
 
   private _maxlength? = this._defaultMaxlength;
+
+  private _formControlName?;
 
   /**
    * @optional
@@ -52,5 +58,21 @@ export class InputPrimarioComponent {
 
   get maxLength() {
     return this._maxlength;
+  }
+
+  /**
+   * @optional
+   *
+   * @description
+   *
+   */
+  @Input('wbs-formControlName') set formControlName(valor: string) {
+    debugger;
+    this._formControlName = valor;
+  }
+
+  get formControlName() {
+    debugger;
+    return this._formControlName;
   }
 }

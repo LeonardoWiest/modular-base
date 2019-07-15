@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { BotaoPrimarioComponent } from '@shared/components/botao-primario/botao-primario.component';
 import { InputPrimarioComponent } from '@shared/components/input-primario/input-primario.component';
 
@@ -15,37 +15,18 @@ export class AutenticacaoPageComponent implements OnInit {
   @ViewChild('botaoRealizarLogin', { static: true })
   botaoRealizarLogin: BotaoPrimarioComponent;
 
-  autenticacaoForm: FormGroup;
-
-  autenticacaoDTO = {
-    login: '',
-    senha: ''
-  };
+  formGroupAutenticacao: FormGroup;
 
   constructor(private formBuilder: FormBuilder) {}
 
   ngOnInit() {
-    this.autenticacaoForm = this.formBuilder.group({
-      login: [
-        this.autenticacaoDTO.login,
-        Validators.compose([
-          Validators.required,
-          Validators.minLength(10),
-          Validators.maxLength(40)
-        ])
-      ],
-      senha: [
-        this.autenticacaoDTO.senha,
-        Validators.compose([
-          Validators.required,
-          Validators.minLength(10),
-          Validators.maxLength(32)
-        ])
-      ]
-    });
+    this.criarFormulario();
   }
 
-  clickAutenticar = () => this.validarCredenciais();
-
-  validarCredenciais() {}
+  criarFormulario(): void {
+    this.formGroupAutenticacao = this.formBuilder.group({
+      email: '',
+      senha: ''
+    });
+  }
 }
