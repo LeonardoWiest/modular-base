@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { BotaoPrimarioComponent } from '@shared/components/botao-primario/botao-primario.component';
 import { InputPrimarioComponent } from '@shared/components/input-primario/input-primario.component';
 
@@ -23,10 +23,12 @@ export class AutenticacaoPageComponent implements OnInit {
     this.criarFormulario();
   }
 
-  criarFormulario(): void {
+  private criarFormulario(): void {
     this.formGroupAutenticacao = this.formBuilder.group({
-      email: '',
-      senha: ''
+      email: ['', Validators.required],
+      senha: ['', Validators.required]
     });
   }
+
+  clickAutenticar() {}
 }

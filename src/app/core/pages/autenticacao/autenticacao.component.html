@@ -8,12 +8,10 @@
 
           <form class="form-autenticacao" [formGroup]="formGroupAutenticacao" (submit)="clickAutenticar()">
 
-            <wbs-input-primario #inputLogin wbs-formControlName="email" wbs-placeholder="Informe seu login..."
-              wbs-maxlength="40">
+            <wbs-input-primario #inputLogin wbs-formControlName="email" wbs-placeholder="Informe seu login...">
             </wbs-input-primario>
 
-            <wbs-input-primario #inputSenha wbs-formControlName="senha" wbs-placeholder="Informe sua senha..."
-              wbs-maxlength="32">
+            <wbs-input-primario #inputSenha wbs-formControlName="senha" wbs-placeholder="Informe sua senha...">
             </wbs-input-primario>
 
             <wbs-botao-primario wbs-label="Acessar">
