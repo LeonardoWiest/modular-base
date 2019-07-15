@@ -6,13 +6,13 @@
 
           <h1 class="card-logotipo text-center">WBoss</h1>
 
-          <form class="form-autenticacao" (ngSubmit)="clickAutenticar()">
+          <form class="form-autenticacao" [formGroup]="formGroupAutenticacao" (submit)="clickAutenticar()">
 
-            <wbs-input-primario [formGroup]="autenticacaoForm" #inputLogin wbs-placeholder="Informe seu login..."
+            <wbs-input-primario #inputLogin wbs-formControlName="email" wbs-placeholder="Informe seu login..."
               wbs-maxlength="40">
             </wbs-input-primario>
 
-            <wbs-input-primario [formGroup]="autenticacaoForm" #inputSenha wbs-placeholder="Informe sua senha..."
+            <wbs-input-primario #inputSenha wbs-formControlName="senha" wbs-placeholder="Informe sua senha..."
               wbs-maxlength="32">
             </wbs-input-primario>
 
