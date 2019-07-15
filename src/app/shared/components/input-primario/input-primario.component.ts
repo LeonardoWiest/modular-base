@@ -67,12 +67,10 @@ export class InputPrimarioComponent {
    *
    */
   @Input('wbs-formControlName') set formControlName(valor: string) {
-    debugger;
     this._formControlName = valor;
   }
 
   get formControlName() {
-    debugger;
     return this._formControlName;
   }
 }
