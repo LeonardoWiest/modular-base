@@ -20,4 +20,4 @@ install:
   - npm install
 
 script:
-  - npm run
+  - npm run build --loglevel verbose

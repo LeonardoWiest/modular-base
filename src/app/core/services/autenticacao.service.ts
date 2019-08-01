@@ -1,9 +1,7 @@
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
 import { Injectable } from '@angular/core';
-import { HttpRequestServiceHelper } from '@shared/helpers/http.request.service';
 import { AutenticacaoDTO } from '@shared/models/autenticacao.dto';
 import { RetornoAutenticacaoDTO } from '@shared/models/retorno-autenticacao.dto';
+import { Observable } from 'rxjs';
 
 /**
  * @description
@@ -14,11 +12,11 @@ import { RetornoAutenticacaoDTO } from '@shared/models/retorno-autenticacao.dto'
  */
 @Injectable({ providedIn: 'root' })
 export class AutenticacaoService {
-  constructor(private httpRequestServiceHelper: HttpRequestServiceHelper) {}
+  constructor() { }
 
   realizarLogin(
     autenticacaoDTO: AutenticacaoDTO
   ): Observable<RetornoAutenticacaoDTO> {
-    return this.httpRequestServiceHelper.post().pipe(map(retorno => retorno));
+    return null;
   }
 }
