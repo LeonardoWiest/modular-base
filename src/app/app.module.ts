@@ -6,9 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 registerLocaleData(ptBr);
+
 @NgModule({
   declarations: [AppComponent],
   imports: [CoreModule, AppRoutingModule],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

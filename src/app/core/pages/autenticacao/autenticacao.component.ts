@@ -21,7 +21,7 @@ export class AutenticacaoPageComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private autenticacaoService: AutenticacaoService
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.criarFormulario();

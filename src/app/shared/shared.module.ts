@@ -8,4 +8,4 @@ import { RouterModule } from '@angular/router';
   declarations: [],
   exports: [CommonModule, FormsModule]
 })
-export class SharedModule {}
+export class SharedModule { }

@@ -18,9 +18,9 @@ import { ControlContainer, FormGroupDirective } from '@angular/forms';
 export class InputPrimarioComponent {
   private _defaultMaxlength = 32;
 
-  private _placeholder? = '';
+  private _placeholder?= '';
 
-  private _maxlength? = this._defaultMaxlength;
+  private _maxlength?= this._defaultMaxlength;
 
   private _formControlName?;
 

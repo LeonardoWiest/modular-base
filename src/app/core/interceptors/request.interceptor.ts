@@ -1,13 +1,6 @@
+import { HttpErrorResponse, HttpEvent, HttpHandler, HttpInterceptor, HttpRequest, HttpResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
-import {
-  HttpErrorResponse,
-  HttpEvent,
-  HttpHandler,
-  HttpInterceptor,
-  HttpRequest,
-  HttpResponse
-} from '@angular/common/http';
 
 export abstract class RequestInterceptor implements HttpInterceptor {
   intercept(
@@ -27,7 +20,7 @@ export abstract class RequestInterceptor implements HttpInterceptor {
       )
     );
   }
-  private processarResponseSucesso(response: HttpResponse<any>) {}
+  private processarResponseSucesso(response: HttpResponse<any>) { }
 
   private processarResponseFalha(
     response: HttpErrorResponse,
