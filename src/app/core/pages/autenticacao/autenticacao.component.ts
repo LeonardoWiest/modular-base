@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { AutenticacaoService } from '@core/services/autenticacao.service';
-import { BotaoPrimarioComponent } from '@shared/components/botao-primario/botao-primario.component';
-import { InputPrimarioComponent } from '@shared/components/input-primario/input-primario.component';
+import { BotaoPrimarioComponent } from 'src/app/shared/components/botao-primario/botao-primario.component';
+import { InputPrimarioComponent } from 'src/app/shared/components/input-primario/input-primario.component';
+import { AutenticacaoService } from '../../services/autenticacao.service';
 
 @Component({
   templateUrl: './autenticacao.component.html',

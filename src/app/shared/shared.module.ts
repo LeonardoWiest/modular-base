@@ -4,8 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
-  imports: [CommonModule, FormsModule, RouterModule],
-  declarations: [],
-  exports: [CommonModule, FormsModule]
+    imports: [CommonModule, FormsModule, RouterModule],
+    declarations: [],
+    exports: [CommonModule, FormsModule]
 })
 export class SharedModule { }

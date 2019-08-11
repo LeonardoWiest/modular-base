@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { AutenticacaoDTO } from '@shared/models/autenticacao.dto';
-import { RetornoAutenticacaoDTO } from '@shared/models/retorno-autenticacao.dto';
 import { Observable } from 'rxjs';
+import { AutenticacaoDTO } from 'src/app/shared/interfaces/autenticacao.dto';
+import { RetornoAutenticacaoDTO } from 'src/app/shared/interfaces/retorno-autenticacao.dto';
 
 /**
  * @description

@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'wbs-botao-primario',
+  selector: 'stone-botao-primario',
   templateUrl: './botao-primario.component.html',
   styleUrls: ['./botao-primario.component.scss']
 })
@@ -19,5 +19,5 @@ export class BotaoPrimarioComponent {
    *
    * Label do botão.
    */
-  @Input('wbs-label') label?;
+  @Input('stone-label') label?;
 }

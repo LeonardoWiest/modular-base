@@ -4,18 +4,18 @@
       <div class="text-center">
         <div class="card card-autenticacao my-5">
 
-          <h1 class="card-logotipo text-center">WBoss</h1>
+          <h1 class="card-logotipo text-center">Stone Client</h1>
 
           <form class="form-autenticacao" [formGroup]="formGroupAutenticacao" (submit)="clickAutenticar()">
 
-            <wbs-input-primario #inputEmail wbs-formControlName="email" wbs-placeholder="E-mail...">
-            </wbs-input-primario>
+            <stone-input-primario #inputEmail stone-formControlName="email" stone-placeholder="E-mail...">
+            </stone-input-primario>
 
-            <wbs-input-primario #inputSenha wbs-formControlName="senha" wbs-placeholder="Senha...">
-            </wbs-input-primario>
+            <stone-input-primario #inputSenha stone-formControlName="senha" stone-placeholder="Senha...">
+            </stone-input-primario>
 
-            <wbs-botao-primario wbs-label="Acessar">
-            </wbs-botao-primario>
+            <stone-botao-primario stone-label="Acessar">
+            </stone-botao-primario>
 
           </form>
 
