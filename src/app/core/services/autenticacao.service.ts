@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { AutenticacaoDTO } from 'src/app/shared/interfaces/autenticacao.dto';
 import { RetornoAutenticacaoDTO } from 'src/app/shared/interfaces/retorno-autenticacao.dto';
+import { AutenticacaoFacade } from '../facades/autenticacao.facade';
 
 /**
  * @description
@@ -12,11 +13,13 @@ import { RetornoAutenticacaoDTO } from 'src/app/shared/interfaces/retorno-autent
  */
 @Injectable({ providedIn: 'root' })
 export class AutenticacaoService {
-  constructor() { }
 
-  realizarLogin(
-    autenticacaoDTO: AutenticacaoDTO
-  ): Observable<RetornoAutenticacaoDTO> {
-    return null;
+  constructor(
+    private autenticacaoFacade: AutenticacaoFacade
+  ) { }
+
+  realizarLogin(autenticacaoDTO: AutenticacaoDTO): Observable<RetornoAutenticacaoDTO> {
+    debugger
+    return this.autenticacaoFacade.realizarLogin(autenticacaoDTO);
   }
 }

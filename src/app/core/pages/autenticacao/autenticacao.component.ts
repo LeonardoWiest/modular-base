@@ -9,7 +9,7 @@ import { AutenticacaoService } from '../../services/autenticacao.service';
   styleUrls: ['./autenticacao.component.scss']
 })
 export class AutenticacaoPageComponent implements OnInit {
-  @ViewChild('inputEmail', { static: true }) inputEmail: InputPrimarioComponent;
+  @ViewChild('inputLogin', { static: true }) inputLogin: InputPrimarioComponent;
 
   @ViewChild('inputSenha', { static: true }) inputSenha: InputPrimarioComponent;
 
@@ -29,10 +29,7 @@ export class AutenticacaoPageComponent implements OnInit {
 
   private criarFormulario(): void {
     this.formGroupAutenticacao = this.formBuilder.group({
-      email: [
-        '',
-        Validators.compose([Validators.required, Validators.minLength(5)])
-      ],
+      login: ['', Validators.compose([Validators.required, Validators.minLength(15)])],
       senha: ['', Validators.required]
     });
   }
@@ -41,6 +38,10 @@ export class AutenticacaoPageComponent implements OnInit {
     this.autenticacaoService
       .realizarLogin(this.formGroupAutenticacao.value)
       .subscribe(retorno => {
+        debugger
         console.log(retorno.token);
-      });
+      },
+        () => {
+          debugger
+        });
 }
